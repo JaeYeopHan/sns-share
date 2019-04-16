@@ -47,6 +47,7 @@ twitter에서는 `og:-*`을 지원하고 있는데, 대신 다음과 같은 meta
 	- 동영상을 공유할 때 사용하는 content type
 - `app`
 
+Content Type을 지정해주면 기본적으로 og 태그에 지정된 속성들을 가져간다.
 
 ### ‘summary’의 함정
 
@@ -56,6 +57,13 @@ twitter에서는 `og:-*`을 지원하고 있는데, 대신 다음과 같은 meta
 
 > **The dimensions of the image are smaller than the recommended size.** We suggest that images are a minimum of 144 x 144 pixels in size.
 
+따라서 이미지 크기를 조정해야 한다. 이 때, Facebook, twitter 두 SNS에서 다른 thumbnail image를 노출하고 싶다면 twitter 관련 meta 태그를 하나 추가해줘야 한다.
+
+```html
+<meta name="twitter:image" content="[IMAGE_FILE]"/>
+```
+
+기본적으로 Facebook은 `og:image`에 지정되어 있는 이미지 파일을 크롤링해가고 twitter는 `twitter:image`에 있는 이미지 파일을 크롤링해간다.
 
 ## Useful References
 
