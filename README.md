@@ -18,16 +18,17 @@
 <meta property="og:site_name" content="[String]" />
 ```
 
-
 ### Tips for you
 
 #### Tip 1. og:image는 relative path로 지정할 수 없음.
 
-[image:55EB51F2-5CA6-4A16-A948-04FABD753B59-406-0000A7AD3D54CD4C/스크린샷 2019-04-12 오후 6.12.32.png]
+![](./docs/facebook_error_relative_path.png)
 
+(TBD)
 
 ## Twitter sharing
-[image:9A58A092-E6E3-4FDF-9E52-19EA2E283AF0-30054-0000CC8FF7134EA6/스크린샷 2019-04-16 오전 11.22.22.png]
+
+![](./docs/twitter_example.png)
 
 twitter에서는 `og:-*`을 지원하고 있는데, 대신 다음과 같은 meta 태그를 추가해둬야 한다.
 ```html
@@ -49,9 +50,10 @@ twitter에서는 `og:-*`을 지원하고 있는데, 대신 다음과 같은 meta
 
 ### ‘summary’의 함정
 
-[image:A16183FC-8EEF-4446-B7EE-7A85F4ADD5FC-406-0000A810234FAB4F/스크린샷 2019-04-12 오후 6.19.40.png]
+![](./docs/image_fetch_fail.png)
 
 `<og:image>`를 제대로 지정해줬음에도 불구하고 thumbnail 이미지가 제대로 노출되지 않은 이슈가 있다. 크롤러가 가져올 수 있는 이미지 용량에 제한이 있기 때문이며 이는 작은 이미지로 바꾸면 잘 노출된다. 공식 문서에서는 다음과 같이 말하고 있다.
+
 > **The dimensions of the image are smaller than the recommended size.** We suggest that images are a minimum of 144 x 144 pixels in size.
 
 
