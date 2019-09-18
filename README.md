@@ -79,6 +79,10 @@ Content Type을 지정해주면 기본적으로 og 태그에 지정된 속성들
 
 - [Card Validator](https://cards-dev.twitter.com/validator)
 
+#### Kakao
+
+- [Cache 삭제 도구](https://developers.kakao.com/docs/cache)
+
 #### ETC
 
 - [Favicon Generator](https://favicon.io)
